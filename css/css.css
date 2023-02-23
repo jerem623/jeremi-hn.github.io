@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0f222b;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 60px
+}
+.contenedor{
+    margin: auto;
+    width: 100%;
+}
+.caja_columna{
+    color: #fff;
+    background: #0f222b;
+    position:relative;
+    text-align: center;
+    width: 48%;
+    height: 500px;
+    margin: 10px;
+}
+
+.caja_columna .texto{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 5px solid #008000;
+    padding: 30px;
+}
+.caja_columna .texto h2{
+    font-size: 40px;
+    margin: 0 0 10px;
+    
+}
+
+.caja_columna .texto p{
+    font-size: 18px;
+}
+
+svg,rect{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill:transparent;
+}
+
+rect{
+    stroke:#FFA500;
+    stroke-width:4;
+    stroke-dasharray:400;
+    animation: animate 4s linear infinite;
+    
+}
+
+.caja .content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+
+@keyframes animate
+{
+    0%{
+        stroke-dashoffset:800;
+        
+    }
+    
+    100%{
+        stroke-dashoffset:0;
+    }
+    
+}
+
+@media(min-width:400px){
+    .caja_columna{
+        width: 40%;
+        height: 400px;
+    }
+}
+
+
+
+
+
+
+iframe{
+
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 700px;
+    height: 350px;
+   position:absolute;
+    top: 110px;
+    left: 600px;
+    
+    
+}
+
+
+
+
+
+
+
+
+.content-descarga{ 
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background: #596965;
+    text-align: center;
+    border: 2px  #adcaff;
+     margin: 0 auto;
+    position: absolute;
+    top:490px;
+    left: 700px
+}
+.descarga-ahora{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    background: #286ef2;
+    color: #fff;
+    border-radius: 5px;
+}
+.descarga-ahora:hover{
+    opacity: 0.9;
+}
+.btn-descarga{
+    display: inline-block;
+    padding: 15px 25px;
+    background: #286ef2;
+    color: #fff;
+    border:none;
+    font-size: 16px;
+    margin-top: -10px;
+    border-radius: 5px;
+    outline: 0px;
+    cursor: pointer;
+}
+.btn-descarga:hover{
+    opacity: 0.9;
+}
+.content-descarga i{
+    margin-left: 5px;
+}
