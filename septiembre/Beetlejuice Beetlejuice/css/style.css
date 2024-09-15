@@ -155,3 +155,42 @@ background:linear-gradient(rgba(5, 7, 12, 0.75),rgba(5, 7, 12 ,0.75)), url("http
    }
 
 }
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+.reloj{
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
+    text-align:center;
+    position:absolute;
+    left: 32%;
+    top: 4%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 0 10px rgba(10,175, 230,1), 0 0 20px rgba(10,175, 230,0) ;
+}
+.tiempo{
+    letter-spacing: 0.05em;
+    font-size: 0px;
+    padding: 5px 0;
+}
+.fecha{
+    letter-spacing: 0.1em;
+    font-size: 24px;
+}
+
